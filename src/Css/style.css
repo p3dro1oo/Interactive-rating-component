@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    background-color: hsl(216, 12%, 8%);
+    margin: 0;
+    padding: 0;
+    font-family: "Overpass", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 42vh;
+    width: 90vw;
+    background-color: 
+    rgba(27,34,44,255);
+    border-radius: 20px;
+    position: fixed;
+    z-index: 0;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin: 2em 0 0 2em;
+}
+
+.header .title_h1{
+    color: aliceblue;
+    font-size: 1.5em;
+    margin: 0;
+    margin-top: 1em;
+}
+
+.header svg{
+    background-color: #272e38;
+    border-radius: 50%;
+    padding: .8em;
+}
+
+.section_rating{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 2em 0 2em;
+}
+
+.section_rating p{
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    margin: 1.5em 0 2em 0;
+}
+
+.btn_group{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em;
+}
+
+.rating{
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    cursor: pointer; /* Mostra o cursor de clique */
+    margin-bottom: 2em;
+    background-color: #272e38;
+    border: none;
+    color: hsl(217, 12%, 63%);
+}
+
+.rating:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: black;
+}
+.rating.active {
+    background-color: rgb(255, 255, 255); /* Cor quando o botão está ativo */
+    color: rgb(0, 0, 0); /* Texto em branco para contraste */
+  }
+
+.submit_btn{
+    height: 2.5em;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer; /* Mostra o cursor de clique */
+}
+.submit_btn:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: #000;
+}
+
+.submit_btn p {
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+}
+
+.thankYou{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 42vh;
+    width: 90vw;
+    background-color: rgba(27,34,44,255);
+    border-radius: 20px;
+    z-index: 1;
+    display: none;
+}
+
+.span{
+    background-color: #272e38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    width:12em;
+    margin-top: 1em;
+    color: hsl(25, 100%, 61%);
+    border: none;
+    border-radius: 25px;
+    padding: 0em .5em 0em .5em;
+}
+.number_selected{
+    padding-left: 1ch;
+    padding-right: 1ch;
+}
+
+.congratulations{
+    color: #fff;
+    margin-top: 1em;
+ margin-bottom: 0;
+}
+
+.text{
+    width: 60%;
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+}
+
+/* Media Queries */
+@media (min-width: 375px) {
+    .main {
+        height: 45vh;
+        }
+
+    .thankYou{
+        height: 45vh;
+        }
+}
+
+@media (min-width: 1024px) {
+    .main {
+        width: 35vw;}
+
+    .thankYou{
+        width: 35vw;}
+}
+
+@media (min-width: 1440px) {
+    .main {
+        width: 28vw;}
+        .thankYou{
+            width: 28vw;}
+}
